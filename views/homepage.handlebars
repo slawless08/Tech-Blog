@@ -1,0 +1,14 @@
+<h1>Blog Posts</h1>
+
+{{#each blogs as |blog| }}
+<div class='card'>
+  <div class='card-body'>
+    <h3 class='card-title'>{{blog.title}}</h3>
+    <h5>posted by {{user.name}}</h5>
+    <p class='card-text'>{{blog.text_content}}</p>
+  </div>
+</div>
+
+{{/each}}
+
+<a href="/post-blog" class='btn'>Click here to create your own blog post</a>
